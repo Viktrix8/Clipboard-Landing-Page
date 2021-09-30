@@ -251,6 +251,10 @@ body .showcase-two {
     width: 100%;
   }
 
+  .showcase__img-two {
+    width: 10px;
+  }
+
   .showcase-one {
     text-align: left;
   }
