@@ -27,6 +27,9 @@
 }
 
 /* Typography */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Bai Jamjuree", sans-serif;
@@ -166,4 +169,32 @@ h6 {
   justify-items: center;
   align-items: center;
   grid-gap: 2rem;
+}
+
+/* Footer */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  background-color: rgb(232, 232, 232);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  color: var(--color-dark-grayish-blue);
+}
+
+.footer__image {
+  width: 64px;
+  height: 64px;
+}
+
+.footer__images {
+  margin: 1.3rem 1rem 2rem 0;
+}
+
+.footer__images .image {
+  margin-left: 1.5rem;
 }
