@@ -34,6 +34,8 @@ body {
   line-height: 1.5;
   color: var(--color-blue-grayish);
   padding: 0 1rem;
+  background: url(../images/bg-header-mobile.png);
+  background-repeat: no-repeat;
 }
 
 p {
@@ -98,6 +100,24 @@ h6 {
   box-shadow: 0 0 5px var(--color-light-blue);
 }
 
+/* Header */
+
+.header {
+  text-align: center;
+  padding: 6rem 0;
+  background-size: cover;
+}
+
+.header__heading {
+  margin: 0;
+  margin-top: 3.5rem;
+}
+
+.header__text {
+  margin: 0;
+  margin-top: 1rem;
+}
+
 /* Showcase */
 
 .showcase {
@@ -137,4 +157,13 @@ h6 {
 
 .download {
   text-align: center;
+}
+
+/* Companies */
+
+.companies {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 2rem;
 }
