@@ -11,13 +11,13 @@
   --color-light-blue: hsl(233, 100%, 69%);
   --color-dark-grayish-blue: hsl(210, 10%, 33%);
   --color-blue-grayish: hsl(201, 11%, 66%);
-  --heading-1-font-size: 1.5rem;
-  --heading-2-font-size: 1.25rem;
-  --heading-3-font-size: 1rem;
-  --heading-3-font-size: 0.8rem;
+  --heading-1-font-size: 2rem;
+  --heading-2-font-size: 1.5rem;
+  --heading-3-font-size: 1.25rem;
+  --heading-3-font-size: 1.1rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   :root {
     --heading-1-font-size: 2.25rem;
     --heading-2-font-size: 1.5rem;
@@ -39,6 +39,8 @@ body {
   padding: 0 1rem;
   background: url(../images/bg-header-mobile.png);
   background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 
 p {
@@ -91,6 +93,11 @@ h6 {
   border-radius: 40px;
   padding: 0.8rem;
   margin-top: 1.5rem;
+  transition: transform 0.5s;
+}
+
+.btn:hover {
+  transform: scale(1.15);
 }
 
 .btn--primary {
@@ -125,6 +132,7 @@ h6 {
 
 .showcase {
   text-align: center;
+  margin-bottom: 10rem;
 }
 
 .showcase__grid {
@@ -152,14 +160,23 @@ h6 {
   margin: 2rem 0 0.4rem 0;
 }
 
+body .showcase-two {
+  margin-bottom: 5rem;
+}
+
 .benefits__text {
   margin: 0;
+}
+
+.box__icon {
+  margin-top: 3rem;
 }
 
 /* Download Block */
 
 .download {
   text-align: center;
+  margin-bottom: 10rem;
 }
 
 /* Companies */
@@ -169,13 +186,14 @@ h6 {
   justify-items: center;
   align-items: center;
   grid-gap: 2rem;
+  margin-bottom: 7rem;
 }
 
 /* Footer */
-body {
+/* body {
   padding: 0;
   margin: 0;
-}
+} */
 
 .footer {
   background-color: rgb(232, 232, 232);
@@ -183,10 +201,15 @@ body {
   justify-items: center;
   align-items: center;
   text-align: center;
+  width: 100vw;
+  position: relative;
+  top: 1rem;
+  left: -1.5rem;
   color: var(--color-dark-grayish-blue);
 }
 
 .footer__image {
+  margin-top: 2rem;
   width: 64px;
   height: 64px;
 }
@@ -197,4 +220,120 @@ body {
 
 .footer__images .image {
   margin-left: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background: url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+  }
+
+  .btn {
+    width: 30%;
+    margin-left: 2rem;
+    display: inline;
+  }
+
+  .header__text {
+    padding: 0 10rem;
+  }
+
+  .showcase__text {
+    padding: 0 10rem;
+  }
+
+  .showcase__grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+  }
+
+  .showcase__img {
+    width: 100%;
+  }
+
+  .showcase-one {
+    text-align: left;
+  }
+
+  .showcase-one {
+    text-align: left;
+  }
+
+  .showcase-two__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .benefits__box-two {
+    grid-column: 1 / 2;
+  }
+
+  .showcase__main {
+    grid-column: 1 / 4;
+  }
+
+  .blacklist {
+    position: relative;
+    bottom: 0.3rem;
+  }
+  .box {
+    margin-left: 1rem;
+  }
+
+  .showcase-one .showcase__heading {
+    text-align: center;
+  }
+  .showcase-one .showcase__text {
+    text-align: center;
+  }
+
+  /* Companies */
+  .companies {
+    margin-top: 10rem;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  /* Download */
+  .download {
+    padding: 0 10rem;
+  }
+
+  .download__heading {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  /* Footer */
+
+  .footer {
+    max-height: 100vh;
+    position: relative;
+  }
+
+  .footer__items {
+    display: grid;
+    width: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 3rem;
+  }
+
+  .footer__images {
+    margin: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 3.4rem;
+    right: 4rem;
+  }
+
+  .footer__image {
+    position: absolute;
+    left: 4rem;
+    bottom: 2rem;
+    margin: 0;
+  }
 }

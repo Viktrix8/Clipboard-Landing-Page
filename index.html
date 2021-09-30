@@ -12,8 +12,140 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Landing Page</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <header class="header">
+      <img class="header__img" src="images/logo.svg" alt="" />
+      <h1 class="header__heading">A history of everything you copy</h1>
+      <p class="header__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+        earum illo ea laborum placeat illum corrupti alias eligendi pariatur
+        commodi?
+      </p>
+      <button class="btn btn--primary">Download for iOS</button>
+      <button class="btn btn--secondary">Download for Mac</button>
+    </header>
+    <div class="showcase showcase-one">
+      <h2 class="showcase__heading">Keep track of your snippets</h2>
+      <p class="showcase__text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
+        voluptates magnam ratione itaque laboriosam officiis, illo modi quas
+        commodi quaerat!
+      </p>
+      <div class="showcase__grid">
+        <img class="showcase__img" src="images/image-computer.png" alt="" />
+        <div class="benefits">
+          <div class="box benefits__box-one">
+            <h3 class="benefits__heading">Quick Search</h3>
+            <p class="benefits__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+              soluta harum, tenetur eos quis eaque?
+            </p>
+          </div>
+          <div class="box benefits__box-two">
+            <h3 class="benefits__heading">iCloud Sync</h3>
+            <p class="benefits__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+              soluta harum, tenetur eos quis eaque?
+            </p>
+          </div>
+          <div class="box benefits__box-three">
+            <h3 class="benefits__heading">Complete History</h3>
+            <p class="benefits__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+              soluta harum, tenetur eos quis eaque?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="showcase showcase-two">
+      <div class="showcase__grid-two">
+        <h2 class="showcase__heading">Access Clipboard Anywhere</h2>
+        <p class="showcase__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+          consequuntur aspernatur tenetur soluta nemo fuga.
+        </p>
+        <img class="showcase__img-two" src="images/image-devices.png" alt="" />
+        <div class="benefits">
+          <div class="box benefits__box-one">
+            <div class="showcase-two__grid">
+              <div class="showcase__main">
+                <h3 class="benefits__heading">Supercharge your workflow</h3>
+                <p class="benefits__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                  soluta harum, tenetur eos quis eaque?
+                </p>
+              </div>
+              <div class="box benefits__box-two">
+                <img class="box__icon" src="images/icon-blacklist.svg" alt="" />
+                <div class="blacklist">
+                  <h3 class="benefits__heading">Create Blacklist</h3>
+                  <p class="benefits__text blacklist">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                    soluta harum, tenetur eos quis eaque?
+                  </p>
+                </div>
+              </div>
+              <div class="box benefits__box-three">
+                <img class="box__icon" src="images/icon-text.svg" alt="" />
+                <h3 class="benefits__heading">Plain text snippets</h3>
+                <p class="benefits__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                  soluta harum, tenetur eos quis eaque?
+                </p>
+              </div>
+              <div class="box benefits__box-four">
+                <img class="box__icon" src="images/icon-preview.svg" alt="" />
+                <h3 class="benefits__heading">Sneak Preview</h3>
+                <p class="benefits__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                  soluta harum, tenetur eos quis eaque?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="companies">
+      <img class="logo" src="images/logo-google.png" alt="" />
+      <img class="logo" src="images/logo-ibm.png" alt="" />
+      <img class="logo" src="images/logo-microsoft.png" alt="" />
+      <img class="logo" src="images/logo-hp.png" alt="" />
+      <img class="logo" src="images/logo-vector-graphics.png" alt="" />
+    </div>
+    <div class="download">
+      <h4 class="download__heading">Clipboard for iOS and Mac OS</h4>
+      <p class="download__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+        necessitatibus esse, optio illum, atque nesciunt nisi adipisci nam,
+      </p>
+      <button class="btn btn--primary">Download for iOS</button>
+      <button class="btn btn--secondary">Download for Mac</button>
+    </div>
+    <footer class="footer">
+      <img class="footer__image" src="images/logo.svg" alt="" />
+      <div class="footer__items">
+        <p>FAQs</p>
+        <p>Contact Us</p>
+        <p>Privacy Policy</p>
+        <p>Press Kit</p>
+        <p>Install Guide</p>
+      </div>
+      <div class="footer__images">
+        <img class="image" src="images/icon-facebook.svg" alt="" />
+        <img class="image" src="images/icon-twitter.svg" alt="" />
+        <img class="image" src="images/icon-instagram.svg" alt="" />
+      </div>
+    </footer>
+    <script>
+      ScrollReveal().reveal(".showcase");
+      ScrollReveal().reveal(".header");
+      ScrollReveal().reveal(".footer");
+      ScrollReveal().reveal(".box");
+      ScrollReveal().reveal(".companies");
+    </script>
   </body>
 </html>
