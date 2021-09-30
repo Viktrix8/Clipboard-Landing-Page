@@ -1,3 +1,9 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /* Variables */
 
 :root {
@@ -5,20 +11,19 @@
   --color-light-blue: hsl(233, 100%, 69%);
   --color-dark-grayish-blue: hsl(210, 10%, 33%);
   --color-blue-grayish: hsl(201, 11%, 66%);
-  --heading-1-font-size: font-size: 3.052rem;
-  --heading-2-font-size: font-size: 2.441rem;
-  --heading-3-font-size: font-size: 1.953rem;
-  --heading-4-font-size: font-size: 1.563rem;
-  --heading-5-font-size: font-size: 1.25rem;
-  --heading-6-font-size: font-size: 1rem;
+  --heading-1-font-size: 1.5rem;
+  --heading-2-font-size: 1.25rem;
+  --heading-3-font-size: 1rem;
+  --heading-3-font-size: 0.8rem;
 }
 
-/* Basics */
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
+@media screen and (max-width: 768px) {
+  :root {
+    --heading-1-font-size: 2.25rem;
+    --heading-2-font-size: 1.5rem;
+    --heading-3-font-size: 1.25rem;
+    --heading-3-font-size: 1rem;
+  }
 }
 
 /* Typography */
@@ -28,6 +33,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: var(--color-blue-grayish);
+  padding: 0 1rem;
 }
 
 p {
@@ -71,22 +77,64 @@ h6 {
 /* Buttons */
 
 .btn {
-    width: 100%;
-    height: 50px;
-    display: block;
-    text-align: center;
-    color: white;
-    border-radius: 40px;
-    padding: 0.8rem;
-    margin-top: 2rem;
+  border: 0;
+  width: 100%;
+  height: 50px;
+  display: block;
+  text-align: center;
+  color: white;
+  border-radius: 40px;
+  padding: 0.8rem;
+  margin-top: 1.5rem;
 }
 
 .btn--primary {
-    background-color: var(--color-strong-cyan);
-    box-shadow: 0 0 5px var(--color-strong-cyan);
+  background-color: var(--color-strong-cyan);
+  box-shadow: 0 0 5px var(--color-strong-cyan);
 }
 
 .btn--secondary {
-    background-color: var(--color-light-blue);
-    box-shadow: 0 0 5px var(--color-light-blue);
+  background-color: var(--color-light-blue);
+  box-shadow: 0 0 5px var(--color-light-blue);
+}
+
+/* Showcase */
+
+.showcase {
+  text-align: center;
+}
+
+.showcase__grid {
+  display: grid;
+}
+
+.showcase__img {
+  width: 100%;
+}
+
+.showcase__text {
+  margin: 0;
+  margin-top: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.showcase__heading {
+  margin: 0;
+}
+
+/* Benefits */
+
+.benefits__heading {
+  margin: 0;
+  margin: 2rem 0 0.4rem 0;
+}
+
+.benefits__text {
+  margin: 0;
+}
+
+/* Download Block */
+
+.download {
+  text-align: center;
 }
